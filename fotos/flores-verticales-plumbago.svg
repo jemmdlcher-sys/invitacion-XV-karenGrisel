@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 1100" aria-label="Flores decorativas verticales inclinadas" role="img">
+  <defs>
+    <linearGradient id="stem" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef2f7" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#B8A9C9" stop-opacity="0.65"/>
+    </linearGradient>
+    <radialGradient id="petal" cx="50%" cy="42%" r="62%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="0.55" stop-color="#C0C8D4" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#B8A9C9" stop-opacity="0.68"/>
+    </radialGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <path id="leaf" d="M0 0 C36 -35 78 -35 116 0 C76 18 35 24 0 0Z"/>
+    <g id="flower">
+      <ellipse cx="0" cy="-28" rx="15" ry="32" fill="url(#petal)"/>
+      <ellipse cx="28" cy="-8" rx="15" ry="32" fill="url(#petal)" transform="rotate(62 28 -8)"/>
+      <ellipse cx="18" cy="28" rx="15" ry="32" fill="url(#petal)" transform="rotate(136 18 28)"/>
+      <ellipse cx="-18" cy="28" rx="15" ry="32" fill="url(#petal)" transform="rotate(224 -18 28)"/>
+      <ellipse cx="-28" cy="-8" rx="15" ry="32" fill="url(#petal)" transform="rotate(300 -28 -8)"/>
+      <circle cx="0" cy="0" r="12" fill="#eef2f7" opacity="0.9"/>
+      <circle cx="0" cy="0" r="5" fill="#B8A9C9" opacity="0.86"/>
+    </g>
+  </defs>
+  <g transform="rotate(-12 160 550)" opacity="0.72" filter="url(#glow)">
+    <path d="M170 -30 C90 120 230 240 145 390 C60 540 245 640 155 800 C100 898 132 1000 206 1130" fill="none" stroke="url(#stem)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M158 72 C92 92 72 132 55 185" fill="none" stroke="url(#stem)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M172 240 C236 258 264 304 278 356" fill="none" stroke="url(#stem)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M142 418 C86 450 62 500 50 560" fill="none" stroke="url(#stem)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M168 640 C238 676 264 724 280 780" fill="none" stroke="url(#stem)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M152 838 C98 872 76 922 62 982" fill="none" stroke="url(#stem)" stroke-width="3" stroke-linecap="round"/>
+
+    <use href="#leaf" transform="translate(70 148) rotate(145) scale(.45)" fill="#d8deeb" opacity="0.58"/>
+    <use href="#leaf" transform="translate(248 318) rotate(-38) scale(.42)" fill="#c9d0de" opacity="0.56"/>
+    <use href="#leaf" transform="translate(72 512) rotate(150) scale(.5)" fill="#eef2f7" opacity="0.46"/>
+    <use href="#leaf" transform="translate(248 730) rotate(-35) scale(.48)" fill="#d9d1e8" opacity="0.5"/>
+    <use href="#leaf" transform="translate(75 932) rotate(148) scale(.42)" fill="#d8deeb" opacity="0.54"/>
+
+    <use href="#flower" transform="translate(154 80) scale(.78) rotate(-8)"/>
+    <use href="#flower" transform="translate(214 262) scale(.68) rotate(18)"/>
+    <use href="#flower" transform="translate(108 450) scale(.82) rotate(-18)"/>
+    <use href="#flower" transform="translate(208 666) scale(.72) rotate(16)"/>
+    <use href="#flower" transform="translate(122 888) scale(.7) rotate(-12)"/>
+
+    <g fill="#ffffff" opacity="0.65">
+      <circle cx="96" cy="236" r="4"/><circle cx="232" cy="448" r="3"/><circle cx="84" cy="706" r="3"/><circle cx="220" cy="936" r="4"/>
+      <path d="M108 330 l6 14 l14 6 l-14 6 l-6 14 l-6 -14 l-14 -6 l14 -6z"/>
+      <path d="M236 588 l5 12 l12 5 l-12 5 l-5 12 l-5 -12 l-12 -5 l12 -5z"/>
+    </g>
+  </g>
+</svg>
